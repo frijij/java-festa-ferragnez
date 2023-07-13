@@ -18,6 +18,7 @@ public class CheckGuest {
         Scanner scan = new Scanner(System.in);
 
         //creo l'array con gli invitati
+String[] guestsList = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 
 
         //chiedo il nome all'utente
