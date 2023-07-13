@@ -22,7 +22,8 @@ String[] guestsList = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Fr
 
 
         //chiedo il nome all'utente
-
+        System.out.print("Inserisci il tuo nome: ");
+        String guestName = scan.nextLine();
 
         //ciclo for per verificare se il nome dell'utente è nella lista
         // uso if per dire di entrare a chi è in lista e di andarsene a chi non c'è
