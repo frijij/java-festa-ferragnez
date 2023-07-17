@@ -20,27 +20,28 @@ public class CheckGuest {
         //creo l'array con gli invitati
 String[] guestsList = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 
-
         //chiedo il nome all'utente
         System.out.print("Inserisci il tuo nome: ");
         String guestName = scan.nextLine();
-        
+
         //ciclo for per verificare se il nome dell'utente è nella lista
         boolean isAGuest = false;
+        
 for (int i=0; i<guestsList.length; i++) {
-    isAGuest = guestName.equals(guestsList[i]);
-    if (!isAGuest) {
-        System.out.println("Non puoi entrare!");
-    } else if (isAGuest){
-        System.out.println("Puoi entrare!");
+    if (guestsList[i].equalsIgnoreCase(guestName)) {
+        isAGuest = true;
     }
-
 }
 
-        // uso if per dire di entrare a chi è in lista e di andarsene a chi non c'è
-
+  if (isAGuest) {
+      System.out.println("Puoi entrare!");
+    } else {
+      System.out.println("Non puoi entrare!");
+    }
 
         // bonus: uso ciclo while
 
+        // chiudo lo scanner
+        scan.close();
     }
 }
